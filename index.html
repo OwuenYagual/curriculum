@@ -3,11 +3,16 @@
     <head>
         <title>Owuen Yagual - Curriculum Vitae</title>
 
-        <meta name="keywords" content="Futuro Ingeniero en Computación">
+        <meta name="keywords" content="Futuro Ingeniero en Ciencias de la Computación">
         <meta name="description" content="Estudiante de la carrera de Ingenieria en Computación de la ESPOL">
         <meta name="author" content="Owuen Yagual">
 
         <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <style>
+            #map { height: 400px; }
+        </style>
     
     </head>
     <body>
@@ -21,9 +26,9 @@
                 <li><a href="#resumen">Resumen</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educación">Educación</a></li>
                 <li><a href="#logros">Logros</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#educación">Educación</a></li>
                 <li><a href="#referencias">Referencias</a></li>
             </ul>
         </nav>
@@ -31,46 +36,100 @@
         <main>
             <section id="resumen">
                 <h2>Resumen</h2>
-                <p>Breve descripcion</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eligendi officiis, quibusdam accusamus provident quae id totam voluptate ex nihil sed quam dolores repudiandae corporis vitae illo iusto incidunt laborum.</p>
+                <img src="https://placehold.co/600x400" alt="Imagen de ejemplo" width="600" height="400">
             </section>
             
             <section id="habilidades">
                 <h2>Habilidades</h2>
                 <p>....</p>
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
 
             <section id="experiencia">
                 <h2>Experiencia</h2>
-                <p>.........</p>
-            </section>
-
-            <section id="educación">
-                <h2>Educación</h2>
-                <p>......</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Empresa</th>
+                            <th>Puesto</th>
+                            <th>Años de experiencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Acme Corporation</td>
+                            <td>Desarrollador web</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
             <section id="logros">
                 <h2>Logros</h2>
-                <p>....</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit maxime est odio numquam expedita, et quisquam laudantium laboriosam consequatur ea recusandae fuga rerum eligendi quibusdam molestias enim provident porro!</p>
             </section>
 
             <section id="proyectos">
                 <h2>Proyectos</h2>
-                <p></p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis possimus, labore, molestiae, sapiente voluptas dolor officiis tempora dignissimos molestias debitis ex sed est totam adipisci deleniti cupiditate nesciunt consequatur distinctio.</p>
+            </section>
+
+            <section id="educación">
+                <h2>Educación</h2>
+                <ul>
+                    <li>Escuela Superior Politecnica del Litoral</li>
+                    <li>Ingenieria en Computación</li>
+                    <li>2021-Actualidad</li>
+                </ul>
             </section>
 
             <section id="referencias">
                 <h2>Referencias</h2>
-                <p></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque nobis sed, ea consequuntur aliquam, quam neque excepturi quasi doloribus atque voluptate perferendis odit autem dolor repellat molestiae maxime eius amet.</p>
+            </section>  
+
+            <section id="oficinas">
+                <h2>Oficinas</h2>
+                <div id="map"></div>
+                <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+            </section>
+
+            <section id="contactame">
+                <h2>Contactame</h2>
+                <form>
+                
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                    <button type="submit">Enviar</button>
+                </form>
             </section>
         </main>
+        
 
         <footer>
             <p>© Owuen Yagual - 2024</p>
             <ul>
-                <li><a href="">LinkedIn</a></li>
+                <li><a href="https://ec.linkedin.com/in/owuen-yagual-panimboz-002824269">LinkedIn</a></li>
                 <li><a href="https://github.com/OwuenYagual">GitHub</a></li>
             </ul>
         </footer>
+
+        <script>
+            var map = L.map('map').setView([37.7749, -122.4194], 13); // Coordenadas de San Francisco
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+            }).addTo(map);
+            L.marker([37.7749, -122.4194]).addTo(map).bindPopup('San Francisco').openPopup();
+        </script>
+
     </body>
 </html>
