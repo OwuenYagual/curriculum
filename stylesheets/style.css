@@ -57,3 +57,8 @@ section {
     -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
     box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
