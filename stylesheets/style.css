@@ -1,12 +1,15 @@
-* {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+    * {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 2000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #1F1C1D;
 }
 
+P {
+    color: #E1E6E6;
+}
 
 header {
     color: #E1E6E6;
@@ -94,29 +97,27 @@ header h2 {
     background-color: transparent;
     flex: 1;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 0.2fr 1fr;
     gap: 0px 0px;
     text-align: left;
     max-width: 300px;
     word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
 }
 
-.info dd {
+.info dd, .info dt {
     background-color: transparent;
     text-align: left;
-    display: inline;
-    width: auto;
-    height: 2rem;
-}
-
-#info-icons {
-    max-width: fit-content;
-    padding-right: 20px;
+    width: fit-content;
+    max-height: 100%;
 }
 
 .info dt {
-    color: #ededed;
+    text-align: center;
+}
 
+.info dt i {
+    color: #ededed;
+    background-color: transparent;
 }
 
 .info dd {
@@ -135,7 +136,7 @@ header h2 {
 .info p a {
     color: #ededed;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 23px;
     margin-right: 10px;
     background-color: transparent;
 }
@@ -143,6 +144,10 @@ header h2 {
 .info p a:hover {
     color: #007bff;
     ;
+}
+
+.info p i {
+    background-color: transparent;
 }
 
 
