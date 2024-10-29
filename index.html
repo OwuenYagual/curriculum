@@ -18,13 +18,7 @@
         rel="stylesheet">;
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        #map {
-            height: 400px;
-        }
-    </style>
-
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
@@ -35,7 +29,7 @@
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#idiomas">Idiomas</a></li>
-            <li><a href="#contactame">Contactame</a></li>
+            <li><a href="#contactame">Contáctame</a></li>
         </ul>
     </nav>
 
@@ -43,7 +37,7 @@
         <div class="info">
             <dl>
                 <dt><i class="fa-regular fa-user"></i></dt>
-                <dd>21 años</dd>
+                <dd>22 años</dd>
                 <dt><i class="fa-solid fa-earth-americas"></i></dt>
                 <dd>Ecuatoriano</dd>
                 <dt><i class="fa-solid fa-school"></i></dt>
@@ -149,8 +143,10 @@
             </ul>
         </section>
         <section id="contactame">
-            <h2 class="subtitle">// Contactame</h2>
-            <form>
+            
+            <h2 class="subtitle">// Contáctame</h2>
+            <p>&lt¡La mayoria de mi tiempo me encuentro en este lugar!&gt</p>
+            <form id="form">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -179,13 +175,10 @@
                 <div class="form-group">
                     <button type="submit" class="btn-submit">Enviar</button>
                 </div>
-                
+
             </form>
-            <div id="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345097544!2d144.9537363153155!3d-37.81627997975145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11b7ed%3A0x5045675218ceed30!2sYour%20Location!5e0!3m2!1sen!2sus!4v1616007047450!5m2!1sen!2sus"
-                    width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
+            <div id="map" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d257835.74997319654!2d-80.25456085750892!3d-2.1484897680083592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1730223950610!5m2!1ses-419!2sec" height="520px" width= "100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
