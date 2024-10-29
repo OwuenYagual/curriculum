@@ -176,9 +176,9 @@ header h2 {
     display: grid;
     justify-content: start;
     align-items: stretch;
-    grid-template-areas: "A D"
+    grid-template-areas: "A ."
                         "B D";
-    gap: 10px 10px;
+    gap: 10px 200px;
 }
 
 #resumen h2 {
@@ -188,15 +188,11 @@ header h2 {
 #resumen p {
     grid-area: B;
     text-align: justify;
-    width: 75%;
+    width: 100%;
 }
 
 #resumen picture {
     grid-area: D;
-}
-
-#github_stats img {
-    padding: 5% 0px;
 }
 
 #habilidades ul {
@@ -219,17 +215,26 @@ header h2 {
 }
 
 #educacion {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    justify-content: space-between;
     align-items: start;
-    flex-direction: column;
-    height: 30vh;
-    flex-wrap:wrap;
+    grid-template-areas: "A ."
+                         "B D";
+    gap: 20px 100px;
 }
 
+#educacion h2 {
+    grid-area: A;
+}
 
+#educacion p {
+    grid-area: B;
+    text-align: justify;
+}
 #educacion iframe {
-    max-width: 25%;
+    grid-area: D;
+    width: 550px;
+    height: 300px;
 }
 
 li {
