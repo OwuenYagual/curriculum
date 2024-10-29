@@ -20,6 +20,11 @@ section {
     padding: 1.7% 0.8%;
     padding-left: 1.2%;
     padding-right: 1.2%;
+    /*border-bottom: 0.2pt solid #635858;*/
+}
+
+section:last-child {
+    border-bottom: 0;
 }
 
 h3 {
@@ -211,6 +216,20 @@ header h2 {
     color: #007bff;
     padding: 1.2%;
     font-size: 23px;
+}
+
+#educacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    height: 30vh;
+    flex-wrap:wrap;
+}
+
+
+#educacion iframe {
+    max-width: 25%;
 }
 
 li {
