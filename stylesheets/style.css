@@ -11,6 +11,25 @@ P {
     color: #E1E6E6;
 }
 
+ul, table {
+    color: #E1E6E6;
+}
+
+section {
+    margin: 4px 2px 8px 2px;
+    padding: 1.7% 0.8%;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+}
+
+h3 {
+    color: #007bff;
+}
+
+h4 {
+    color: #9E8A84
+}
+
 header {
     color: #E1E6E6;
     text-align: center;
@@ -111,9 +130,6 @@ header h2 {
     max-height: 100%;
 }
 
-.info dt {
-    text-align: center;
-}
 
 .info dt i {
     color: #ededed;
@@ -156,9 +172,8 @@ header h2 {
     justify-content: start;
     align-items: stretch;
     grid-template-areas: "A D"
-        "B D";
-    gap: 10px 200px;
-    padding-top: 50px;
+                        "B D";
+    gap: 10px 10px;
 }
 
 #resumen h2 {
@@ -167,23 +182,48 @@ header h2 {
 
 #resumen p {
     grid-area: B;
-    text-align: left;
+    text-align: justify;
+    width: 75%;
 }
 
-#resumen img {
+#resumen picture {
     grid-area: D;
+}
+
+#github_stats img {
+    padding: 5% 0px;
+}
+
+#habilidades ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0.5%;
+}
+
+#habilidades li {
+    margin: auto;
+    font-size: 150px;
+}
+
+
+#habilidades h3 {
+    color: #007bff;
+    padding: 1.2%;
+    font-size: 20px;
 }
 
 li {
     list-style-type: none;
 }
 
-footer ul {
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    width: fit-content;
+footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.5pt solid #b3adad;
+    margin: 4px 2px 8px 2px;
+    padding: 3% 1.2% 2.3% 2.2%;
 }
 
 #photo {
@@ -193,28 +233,64 @@ footer ul {
 
 .subtitle {
     color: #F8AE45;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-size: 200%;
+    word-spacing: -10px;
 }
-
-section {
-    margin: 4px 2px 8px 2px;
-    border: 0.2pt solid #cedddd;
-    padding: 1.5% 0.8%;
-    padding-left: 1.2%;
-    padding-right: 1.2%;
-
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-
-    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-}
-
-
 
 section form {
     display: grid;
     row-gap: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+#contactame h2 {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555B61;
+    color: #FFFFFF;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    background-color: #666C71;
+}
+
+.form-group select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #444B51;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #555B61;
 }
