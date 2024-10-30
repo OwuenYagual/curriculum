@@ -207,6 +207,14 @@ header h2 {
     font-size: 150px;
 }
 
+i {
+    transition: color 0.4s ease-in-out 0.01s, border-bottom 0.4s ease-in-out 0.01s;
+}
+i:hover {
+    color: #F8AE45;
+    border-bottom: 5pt solid #F8AE45;
+}
+
 
 #habilidades h3 {
     color: #007bff;
