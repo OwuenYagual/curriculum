@@ -214,7 +214,7 @@ header h2 {
     font-size: 23px;
 }
 
-#educacion {
+#educacion div {
     display: grid;
     justify-content: space-between;
     align-items: start;
@@ -223,15 +223,15 @@ header h2 {
     gap: 20px 100px;
 }
 
-#educacion h2 {
+#educacion div h2 {
     grid-area: A;
 }
 
-#educacion p {
+#educacion div p {
     grid-area: B;
     text-align: justify;
 }
-#educacion iframe {
+#educacion div iframe {
     grid-area: D;
     width: 550px;
     height: 300px;
@@ -351,7 +351,7 @@ section form {
     }
 }
 
-div, section {
+.scroll-animated {
     view-timeline-name: --image;
     view-timeline-axis: block;
 
